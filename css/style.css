@@ -1,0 +1,300 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+button {
+  padding: 3px 6px;
+  border-radius: 3px;
+  border: 1px solid rgb(136, 136, 138);
+}
+
+.blue-button {
+  background-color: rgb(98, 195, 222);
+  border: 1px solid rgb(136, 136, 138);
+  border-radius: 3px;
+  padding: 6px;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  text-align: justify;
+}
+
+button {
+  cursor: pointer;
+}
+
+#reset {
+  margin-left: 0.5rem;
+}
+
+#detail-deskripsi {
+  margin-bottom: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 3rem 0;
+}
+
+.container .left-container,
+.container .right-container {
+  margin: 0 2rem;
+  width: 30rem;
+}
+
+.left-container h1,
+.right-container h1 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.left-container .form {
+  background-color: #efefef;
+  padding: 1rem;
+}
+
+.form {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.form p {
+  margin-bottom: 5px;
+}
+
+.form .spacing {
+  margin-bottom: 10rem;
+}
+
+.left-container h2 {
+  margin: 1rem 0;
+}
+
+.left-container .spacing-1 {
+  margin: 1rem 0;
+}
+
+.right-container .form-description .content-container,
+.right-container .penyakit .content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #efefef;
+}
+
+.right-container .content-container {
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.right-container .penyakit {
+  margin: 1rem 0 0 0;
+}
+
+.right-container h1 {
+  margin: 0 0 1rem 0;
+}
+
+.form-description h2 {
+  margin: 1rem 0;
+}
+
+.form-description h3 {
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+.form-description p {
+  margin: 1rem 0;
+}
+
+.right-container button {
+  margin: 1rem 0;
+}
+
+.content-container h2 {
+  margin: 1rem 0;
+}
+
+.penyakit p {
+  margin-bottom: 3px;
+}
+
+.right-container .dw-apk {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.form .mq-button-container,
+.right-container .mq-button-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mq-button-container .mq-button {
+  margin-left: 0.5rem;
+}
+
+.right-container .mq-button-footer {
+  width: 10rem;
+}
+
+@media (max-width: 1088px) {
+  .container .right-container {
+    margin: 1rem 2rem 0 2rem;
+  }
+}
+
+@media (max-width: 468px) {
+  .right-container .mq-button-container .mq-button {
+    margin-top: 0 !important;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 434px) {
+  .right-container button {
+    display: flex;
+  }
+
+  .content-container .mq-button-container {
+    display: flex;
+    justify-content: center !important;
+  }
+}
